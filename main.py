@@ -1,6 +1,7 @@
 from instagrapi import Client
 import re
 from sql import add_user
+import random
 
 ############# SETTINGS #############   שם משתמש וסיסמה 
 # Instagram account login
@@ -11,7 +12,7 @@ password = "72217221Mike8295301"
 hashtag = "zamna"
 
 # Number of new users to find   סבב של כמה חיפושים במכה
-required_new_users = 50
+required_new_users = random.randint(30, 52)
 
 # Recent / Top / Reels posts (options: recent, top, reels)   איפה לחפש בפוסטים אחרונים או בטופ פוסטים או ברילס 
 mode = "reels"
