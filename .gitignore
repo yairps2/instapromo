@@ -171,3 +171,4 @@ cython_debug/
 .pypirc
 
 git_token.txt
+how_to_run.txt
