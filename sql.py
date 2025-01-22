@@ -1,10 +1,10 @@
-import psycopg2
+import psycopg2, os
 from psycopg2.extras import execute_values
 
 ################ SETTINGS #############
-database = "instapromo"
-database_user = "instapromo"
-database_password = "instapromo"
+database = "instapromo" #os.getenv("DATABASE_NAME")
+database_user = "instapromo" #os.getenv("DATABASE_USER")
+database_password = "instapromo" #os.getenv("DATABASE_PASSWORD")
 ########################################
 
 def add_user(user_info: list):
